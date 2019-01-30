@@ -1,4 +1,4 @@
-![Nero](https://raw.githubusercontent.com/lucaorio/nero/master/images/nero.jpg)
+![Nero](images/nero.jpg)
 
 # Nero
 Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to replace the standard macOS menubar. It comes with an [Alfred](https://alfredapp.com/) theme.
@@ -12,7 +12,7 @@ Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to 
 
 ## Übersicht Widgets
 
-![Nero Widgets](https://raw.githubusercontent.com/lucaorio/nero/master/images/nero.widgets.jpg)
+![Nero Widgets](images/nero.widgets.jpg)
 
 ### Rationale
 Nero is made as a **distraction-less** alternative to the standard macOS menubar. Main sources of inspirations are [Neauoire](https://xxiivv.com/)'s [widgets](https://github.com/neauoire/ubersicht-widgets), and the many Linux menubars that got me jealous.
@@ -99,7 +99,7 @@ Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
 
 ## Alfred Theme
 
-![Nero Alfred](https://raw.githubusercontent.com/lucaorio/nero/master/images/nero.alfred.jpg)
+![Nero Alfred](images/nero.alfred.jpg)
 
 ### Requirements
 * [Alfred](https://alfredapp.com)
