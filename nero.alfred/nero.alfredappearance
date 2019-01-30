@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 10,
+        "colorSelected" : "#797979FF",
+        "font" : "System",
+        "color" : "#5E5E5EFF"
+      },
+      "shortcut" : {
+        "size" : 12,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System",
+        "color" : "#797979FF"
+      },
+      "backgroundSelected" : "#1C1C1CFF",
+      "text" : {
+        "size" : 12,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System",
+        "color" : "#919191FF"
+      },
+      "iconPaddingHorizontal" : 16,
+      "paddingVertical" : 9,
+      "iconSize" : 32
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#0C0C0CFF",
+      "spacing" : 10,
+      "text" : {
+        "size" : 31,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System",
+        "color" : "#FEFFFFFF"
+      },
+      "backgroundSelected" : "#FFFFFF33"
+    },
+    "window" : {
+      "color" : "#0C0C0CFF",
+      "paddingHorizontal" : 16,
+      "width" : 640,
+      "borderPadding" : 1,
+      "borderColor" : "#1B1C1BFF",
+      "blur" : 0,
+      "roundness" : 4,
+      "paddingVertical" : 16
+    },
+    "credit" : "Luca Orio",
+    "separator" : {
+      "color" : "#FEFFFF00",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#0000000F",
+      "thickness" : 2
+    },
+    "name" : "Nero"
+  }
+}
