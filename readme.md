@@ -29,7 +29,7 @@ I'm not planning to add interactions, icons, nor animations to these widgets, bu
 ### Installation
 
 **CLI:**
-```
+```shell
 $ git clone http://github.com/lucaorio/nero
 $ cp nero/nero.widgets ~/Library/Application\ Support/U<0308>bersicht/widgets/nero.widgets
 ```
@@ -107,7 +107,7 @@ Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
 ### Installation
 
 **CLI:**
-```
+```shell
 $ git clone http://github.com/lucaorio/nero
 $ open nero/nero.alfred/nero.alfredappearance
 ```
