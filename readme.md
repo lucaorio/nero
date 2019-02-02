@@ -1,10 +1,13 @@
 ![Nero](images/nero.jpg)
 
 # Nero
+
 Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to replace the standard macOS menubar. It comes with an [Alfred](https://alfredapp.com/) theme.
+
 > _(Italian) Nero -> (English) Black_
 
 ## Contents
+
 - [Übersicht Widgets](#ubersicht-widgets)
 - [Alfred Theme](#alfred-theme)
 - [License](#license)
@@ -15,6 +18,7 @@ Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to 
 ![Nero Widgets](images/nero.widgets.jpg)
 
 ### Rationale
+
 Nero is made as a **distraction-less** alternative to the standard macOS menubar. Main sources of inspirations are [Neauoire](https://xxiivv.com/)'s [widgets](https://github.com/neauoire/ubersicht-widgets), and the many Linux menubars that got me jealous.
 
 This alternative menubar is **read-only** (not clickable) as I trigger volume controls, do no disturb, space switching, and chunkwm mode via shortcuts.
@@ -22,22 +26,25 @@ This alternative menubar is **read-only** (not clickable) as I trigger volume co
 I'm not planning to add interactions, icons, nor animations to these widgets, but feel free to customize them as you see fit. :)
 
 ### Requirements
-* Overall collection: [Übersicht](http://tracesof.net/uebersicht), [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-* _Chunkwm/Spaces_ widget: [chunkwm](https://github.com/koekeishiya/chunkwm)
-* _Do Not Disturb_ widget: [do-not-disturb-cli](https://github.com/sindresorhus/do-not-disturb-cli)
+
+- Overall collection: [Übersicht](http://tracesof.net/uebersicht), [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
+- _Chunkwm/Spaces_ widget: [chunkwm](https://github.com/koekeishiya/chunkwm)
+- _Do Not Disturb_ widget: [do-not-disturb-cli](https://github.com/sindresorhus/do-not-disturb-cli)
 
 ### Installation
 
 **CLI:**
+
 ```shell
 $ git clone http://github.com/lucaorio/nero
 $ cp nero/nero.widgets ~/Library/Application\ Support/U<0308>bersicht/widgets/nero.widgets
 ```
 
 **Manual**:
-* Download the repository
-* Unzip `nero.widget.zip`
-* Move the `nero.widget` folder to your `Übersicht/widgets` directory
+
+- Download the repository
+- Unzip `nero.widget.zip`
+- Move the `nero.widget` folder to your `Übersicht/widgets` directory
 
 ### Widgets
 
@@ -55,7 +62,7 @@ Provides current status of macOS's _Do Not Disturb_ feature.
 
 Examples: `Dnd: ○` (off) / `Dnd: ●` (on)
 
-Don't forget to update the _node_ path in `donotdisturb.jsx`. Unfortunately, I wasn't able to figure out a way to load my `.zshrc` and have the path resolved automatically.
+If you use [nmv](https://github.com/creationix/nvm), you're all set. Otherwise, you'll have to update your _node_ path in `donotdisturb.sh`.
 
 **Mute**
 
@@ -102,24 +109,29 @@ Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
 ![Nero Alfred](images/nero.alfred.jpg)
 
 ### Requirements
-* [Alfred](https://alfredapp.com)
+
+- [Alfred](https://alfredapp.com)
 
 ### Installation
 
 **CLI:**
+
 ```shell
 $ git clone http://github.com/lucaorio/nero
 $ open nero/nero.alfred/nero.alfredappearance
 ```
 
 **Manual**:
-* Download the repository
-* Open `nero.alfred` folder, and double-click `nero.alfredappearance`
+
+- Download the repository
+- Open `nero.alfred` folder, and double-click `nero.alfredappearance`
 
 ## License
+
 ![https://github.com/lucaorio/nero/blob/master/license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Contacts
-* 🐦 Twitter [@lucaorio](http://twitter.com/@lucaorio_)
-* 🕸 Website [lucaorio.com](http://lucaorio.com)
-* 📬 Email [luca.o@me.com](mailto:luca.o@me.com)
+
+- 🐦 Twitter [@lucaorio](http://twitter.com/@lucaorio_)
+- 🕸 Website [lucaorio.com](http://lucaorio.com)
+- 📬 Email [luca.o@me.com](mailto:luca.o@me.com)

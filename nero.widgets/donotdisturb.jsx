@@ -1,6 +1,5 @@
 // requires https://github.com/sindresorhus/do-not-disturb-cli
-const path = "~/.nvm/versions/node/v10.5.0";
-export const command = `${path}/bin/node ${path}/bin/do-not-disturb status`;
+export const command = "sh ./nero.widgets/donotdisturb.sh";
 export const refreshFrequency = 5000;
 
 export const initialState = "Dnd: ...";
