@@ -1,5 +1,5 @@
 export const command = "osascript -e 'get volume settings'";
-export const refreshFrequency = 3000;
+export const refreshFrequency = 5000;
 
 export const initialState = "Mut: ...";
 

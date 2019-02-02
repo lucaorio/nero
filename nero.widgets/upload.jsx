@@ -1,5 +1,5 @@
 export const command = "sh ./nero.widgets/netspeeds.sh";
-export const refreshFrequency = 2000;
+export const refreshFrequency = 5000;
 
 export const initialState = "Upl: ... kb/s";
 

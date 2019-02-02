@@ -73,7 +73,7 @@ Tweak the shell script in `clock.jsx` to get an AM/PM format.
 
 **Download/Upload Speed**
 
-Provides current _download_, and _upload speeds_ every 2000ms.
+Provides current _download_, and _upload speeds_ every 5,000ms = 5s.
 
 Examples: `Dwl: 020 kb/s` / `Upl: 1.3 mb/s`
 
@@ -81,19 +81,19 @@ _refreshFrequency_ variable is located in `download.jsx`, and `upload.jsx`.
 
 **Memory**
 
-Provides current _memory pressure_, every 20000ms.
+Provides current _memory pressure_, every 30,000ms = 30s.
 
 Examples: `Mem: 20%` / `Mem: !!!` (mem > 80%)
 
 **Cpu**
 
-Provides current _cpu load_, every 5000ms.
+Provides current _cpu load_, every 10,000ms = 10s.
 
 Examples: `Cpu: 20%` / `Cpu: !!!` (cpu > 80%)
 
 **Battery**
 
-Provides current _battery status_, every 20000ms.
+Provides current _battery status_, every 60,000ms = 60s.
 
 Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
 

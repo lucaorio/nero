@@ -1,6 +1,6 @@
 export const command =
   'ESC=`printf "e"`; ps -A -o %cpu | awk \'{s+=$1} END {printf("%.2f",s/8);}\'';
-export const refreshFrequency = 5000;
+export const refreshFrequency = 10000;
 
 export const initialState = "Cpu: ...";
 

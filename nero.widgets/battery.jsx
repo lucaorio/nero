@@ -1,5 +1,5 @@
 export const command = "pmset -g batt | egrep -o '([0-9]+%).*' | cut -d% -f1";
-export const refreshFrequency = 20000;
+export const refreshFrequency = 60000;
 
 export const initialState = "Bat: ...";
 

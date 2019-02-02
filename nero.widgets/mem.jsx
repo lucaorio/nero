@@ -1,6 +1,6 @@
 export const command =
   'ESC=`printf "e"`; ps -A -o %mem | awk \'{s+=$1} END {print "" s}\'';
-export const refreshFrequency = 20000;
+export const refreshFrequency = 30000;
 
 export const initialState = "Mem: ...";
 

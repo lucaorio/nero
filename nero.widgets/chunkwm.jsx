@@ -1,6 +1,6 @@
 // requires https://github.com/koekeishiya/chunkwm
 export const command = "sh ./nero.widgets/chunkwm.sh";
-export const refreshFrequency = 500;
+export const refreshFrequency = 1000;
 
 export const initialState = "[00-...] ...";
 export const updateState = event => event.output;

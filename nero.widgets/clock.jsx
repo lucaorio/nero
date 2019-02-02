@@ -1,5 +1,5 @@
 export const command = 'date +"%d %b %Y - %H:%M"';
-export const refreshFrequency = 10000;
+export const refreshFrequency = 30000;
 
 export const initialState = "...";
 
