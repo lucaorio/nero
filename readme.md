@@ -46,6 +46,8 @@ $ cp nero/nero.widgets ~/Library/Application\ Support/U<0308>bersicht/widgets/ne
 - Unzip `nero.widget.zip`
 - Move the `nero.widget` folder to your `Übersicht/widgets` directory
 
+_Note: If Übersicht is consuming too much battery, consider changing the `refreshFrequency` value available in every widget (or just disable the not needed ones)._
+
 ### Widgets
 
 **Chunkwm / macOS spaces**
@@ -83,8 +85,6 @@ Tweak the shell script in `clock.jsx` to get an AM/PM format.
 Provides current _download_, and _upload speeds_ every 5,000ms = 5s.
 
 Examples: `Dwl: 020 kb/s` / `Upl: 1.3 mb/s`
-
-_refreshFrequency_ variable is located in `download.jsx`, and `upload.jsx`.
 
 **Memory**
 
