@@ -19,7 +19,7 @@ Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to 
 
 ### Rationale
 
-Nero is made as a **distraction-less** alternative to the standard macOS menubar. Main sources of inspirations are [Neauoire](https://xxiivv.com/)'s [widgets](https://github.com/neauoire/ubersicht-widgets), and the many Linux menubars that got me jealous.
+Nero is a **distraction-less** alternative to the standard macOS menubar. Main sources of inspirations are [Neauoire](https://xxiivv.com/)'s [widgets](https://github.com/neauoire/ubersicht-widgets), and some other Linux menubars I've seen here and there.
 
 This alternative menubar is **read-only** (not clickable) as I trigger volume controls, do no disturb, space switching, and chunkwm mode via shortcuts.
 
