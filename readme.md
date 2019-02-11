@@ -29,7 +29,6 @@ I'm not planning to add interactions, icons, nor animations to these widgets, bu
 
 - Overall collection: [Übersicht](http://tracesof.net/uebersicht), [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 - _Chunkwm/Spaces_ widget: [chunkwm](https://github.com/koekeishiya/chunkwm)
-- _Do Not Disturb_ widget: [do-not-disturb-cli](https://github.com/sindresorhus/do-not-disturb-cli)
 
 ### Installation
 
@@ -63,8 +62,6 @@ Amount of spaces, and their name can be customized in `chunkwm.sh`.
 Provides current status of macOS's _Do Not Disturb_ feature.
 
 Examples: `Dnd: ○` (off) / `Dnd: ●` (on)
-
-If you use [nmv](https://github.com/creationix/nvm), you're all set. Otherwise, you'll have to update your _node_ path in `donotdisturb.sh`.
 
 **Mute**
 
