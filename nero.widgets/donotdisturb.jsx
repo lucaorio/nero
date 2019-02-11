@@ -1,14 +1,14 @@
-// requires https://github.com/sindresorhus/do-not-disturb-cli
-export const command = "sh ./nero.widgets/donotdisturb.sh";
+export const command =
+  "defaults -currentHost read com.apple.notificationcenterui doNotDisturb";
 export const refreshFrequency = 5000;
 
 export const initialState = "Dnd: ...";
 
 export const updateState = event => {
-  const output = event.output.replace(/[^a-zA-Z]/g, "");
+  const output = parseInt(event.output);
 
-  if (output === "off") status = "○";
-  else if (output === "on") status = "●";
+  if (output === 0) status = "○";
+  else if (output === 1) status = "●";
   else status = "?";
 
   return `Dnd: ${status}`;
