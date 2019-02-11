@@ -1,4 +1,5 @@
 #!/bin/sh
+# this script is part of Nero -> https://github.com/lucaorio/nero
 # requires https://github.com/koekeishiya/chunkwm
 id=$(/usr/local/bin/chunkc tiling::query --desktop id)
 mode=$(/usr/local/bin/chunkc tiling::query --desktop mode)

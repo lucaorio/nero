@@ -1,3 +1,4 @@
+// this widget is part of Nero -> https://github.com/lucaorio/nero
 export const command = "pmset -g batt | egrep -o '([0-9]+%).*' | cut -d% -f1";
 export const refreshFrequency = 60000;
 

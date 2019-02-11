@@ -1,3 +1,4 @@
+// this widget is part of Nero -> https://github.com/lucaorio/nero
 export const command = "osascript -e 'get volume settings'";
 export const refreshFrequency = 5000;
 

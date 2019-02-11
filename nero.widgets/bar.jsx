@@ -1,3 +1,4 @@
+// this widget is part of Nero -> https://github.com/lucaorio/nero
 export const refreshFrequency = false;
 
 export const initialState = "...";

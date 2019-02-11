@@ -1,3 +1,4 @@
+// this widget is part of Nero -> https://github.com/lucaorio/nero
 // requires https://github.com/koekeishiya/chunkwm
 export const command = "sh ./nero.widgets/chunkwm.sh";
 export const refreshFrequency = 1000;

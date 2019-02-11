@@ -1,3 +1,4 @@
+// this widget is part of Nero -> https://github.com/lucaorio/nero
 export const command = 'date +"%d %b %Y - %H:%M"';
 export const refreshFrequency = 30000;
 
