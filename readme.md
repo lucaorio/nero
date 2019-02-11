@@ -36,7 +36,7 @@ I'm not planning to add interactions, icons, nor animations to these widgets, bu
 
 ```shell
 $ git clone http://github.com/lucaorio/nero
-$ cp nero/nero.widgets ~/Library/Application\ Support/U<0308>bersicht/widgets/nero.widgets
+$ cp -r nero/nero.widgets ~/Library/Application\ Support/Übersicht/widgets/nero.widgets
 ```
 
 **Manual**:
