@@ -19,7 +19,7 @@ export const render = output => <div>{output}</div>;
 
 export const className = {
   top: "0px",
-  left: "164px",
+  left: "61px",
   boxSizing: "border-box",
   borderRight: "1px solid #1c1c1c",
   padding: "7px 12px 6px 12px",

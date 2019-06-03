@@ -8,11 +8,11 @@ export const updateState = event => event.output;
 export const render = output => <div>{output}</div>;
 
 export const className = {
-  top: "0px",
+  bottom: "0px",
   left: "0px",
   boxSizing: "border-box",
   borderRight: "1px solid #1c1c1c",
-  padding: "7px 12px 6px 12px",
+  padding: "8px 12px 5px 12px",
   fontFamily: "Roboto Mono",
   fontWeight: "400",
   fontSize: "10px",
