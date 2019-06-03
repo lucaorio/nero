@@ -12,14 +12,15 @@ export const updateState = event => {
 export const render = output => <div>{output}</div>;
 
 export const className = {
-  boxSizing: "border-box",
   top: "0px",
   right: "calc(50% - 100px)",
   width: "200px",
-  paddingTop: "2px",
+  boxSizing: "border-box",
+  padding: "7px 12px 6px 12px",
   fontFamily: "Roboto Mono",
+  fontWeight: "400",
   fontSize: "10px",
-  lineHeight: "20px",
-  color: "rgba(255,255,255,1)",
-  textAlign: "center"
+  lineHeight: "10px",
+  color: "#cccccc",
+  textAlign: "center",
 };

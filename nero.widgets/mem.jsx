@@ -18,10 +18,12 @@ export const render = output => <div>{output}</div>;
 export const className = {
   top: "0px",
   right: "146px",
-  borderLeft: "1px solid rgba(36,36,36,1)",
-  padding: "2px 12px 0px 12px",
+  boxSizing: "border-box",
+  borderLeft: "1px solid #1c1c1c",
+  padding: "7px 12px 6px 12px",
   fontFamily: "Roboto Mono",
+  fontWeight: "400",
   fontSize: "10px",
-  lineHeight: "20px",
-  color: "rgba(255,255,255,1)"
+  lineHeight: "10px",
+  color: "#cccccc",
 };
