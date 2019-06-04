@@ -16,7 +16,7 @@ export const updateState = event => {
   else if (statusString === 'playing') status = "‣";
   else {
     status = "○";
-    song = "mpc not runnning..."
+    song = "mpc stopped..."
   }
 
   return `${status} ${song}`;
