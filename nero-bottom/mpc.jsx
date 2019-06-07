@@ -1,9 +1,7 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-// requires https://github.com/arybczak/ncmpcpp (mpc based)
-// or https://github.com/MusicPlayerDaemon/mpc
-export const command = 'sh ./nero.widgets/mpc.sh';
+// https://github.com/MusicPlayerDaemon/mpc (via ncmpcpp)
+export const command = "sh ./nero-bottom/mpc.sh";
 export const refreshFrequency = 4000;
-
 export const initialState = "...";
 
 export const updateState = event => {
@@ -12,8 +10,8 @@ export const updateState = event => {
   let song = array[1].replace(/[{}]/g, "");
   let status;
 
-  if (statusString === 'paused') status = "○";
-  else if (statusString === 'playing') status = "‣";
+  if (statusString === "paused") status = "○";
+  else if (statusString === "playing") status = "‣";
   else {
     status = "○";
     song = "mpc stopped..."

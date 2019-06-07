@@ -1,8 +1,6 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-export const command = 'date +"%d %b %Y - %H:%M"';
 export const refreshFrequency = 30000;
-
-export const initialState = '...';
+export const initialState = "...";
 
 export const updateState = event => {
   // 0:0 to 23:59
@@ -30,7 +28,7 @@ export const render = output => (
   <section>
     {`${output}%`}
     <div className="bar">
-      <div className="progress" style={{width: output + '%'}}></div>
+      <div className="progress" style={{width: output + "%"}}></div>
     </div>
   </section>
 );

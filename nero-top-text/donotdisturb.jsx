@@ -1,8 +1,6 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-export const command =
-  "defaults -currentHost read com.apple.notificationcenterui doNotDisturb";
+export const command = "defaults -currentHost read com.apple.notificationcenterui doNotDisturb";
 export const refreshFrequency = 5000;
-
 export const initialState = "Dnd: ...";
 
 export const updateState = event => {

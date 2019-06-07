@@ -1,5 +1,5 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-export const command = "sh ./nero.widgets/netspeeds.sh";
+export const command = "sh ./nero-top-text/netspeeds.sh";
 export const refreshFrequency = 5000;
 
 export const initialState = {
