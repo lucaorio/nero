@@ -2,25 +2,27 @@
 // https://github.com/MusicPlayerDaemon/mpc (via ncmpcpp)
 export const command = "sh ./nero-bottom/mpc.sh";
 export const refreshFrequency = 4000;
-export const initialState = "...";
+export const initialState = "○ mpc stopped...";
 
 export const updateState = event => {
-  const array = event.output.split(/((?!^)\{.*?\})/);
-  const statusString = array[0].replace(/[{}]/g, "");
-  let song = array[1].replace(/[{}]/g, "");
-  let status;
+  let status = initialState;
 
-  if (statusString === "paused") status = "○";
-  else if (statusString === "playing") status = "‣";
-  else {
-    status = "○";
-    song = "mpc stopped..."
+  if (event.output) {
+    const array = event.output.split(/((?!^)\{.*?\})/);
+    const playingState = array[0].replace(/[{}]/g, "");
+    const song = array[1].replace(/[{}]/g, "");
+    if (playingState === "paused") status = `○ ${song}`;
+    else if (playingState === "playing") status = `‣ ${song}`;
   }
 
-  return `${status} ${song}`;
+  return status;
 }
 
-export const render = output => (<section><div>{output}</div></section>);
+export const render = output => (
+  <section>
+    <div>{output}</div>
+  </section>
+);
 
 export const className = {
   bottom: "0px",

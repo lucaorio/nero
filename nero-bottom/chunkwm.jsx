@@ -3,7 +3,13 @@
 export const command = "sh ./nero-bottom/chunkwm.sh";
 export const refreshFrequency = 1000;
 export const initialState = "[00-...] ...";
-export const updateState = event => event.output;
+
+export const updateState = event => {
+  let status = initialState;
+  if (event.output) status = event.output;
+  return status
+};
+
 export const render = output => <div>{output}</div>;
 
 export const className = {
