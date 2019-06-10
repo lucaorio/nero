@@ -4,8 +4,6 @@ export const refreshFrequency = 60000;
 export const initialState = "Bat: ...";
 
 export const updateState = event => {
-  if (event.error) return event.error;
-
   const battery = parseInt(event.output);
   const batteryval = battery.toString().padStart(2, "0");
 
