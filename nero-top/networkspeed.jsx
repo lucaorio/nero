@@ -8,7 +8,7 @@ export const initialState = {
 };
 
 const speed = (usage, dwl) => {
-  if (usage < 1000) return { val: usage / 10, col: "#ffffff" };
+  if (usage < 1000) return { val: usage / 100, col: "#ffffff" };
   else return { val: 100, col: dwl ? "#7ed321" : "#d0021b" };
 };
 
