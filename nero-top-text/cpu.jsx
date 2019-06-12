@@ -1,8 +1,6 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-export const command =
-  'ESC=`printf "e"`; ps -A -o %cpu | awk \'{s+=$1} END {printf("%.2f",s/8);}\'';
+export const command = 'ESC=`printf "e"`; ps -A -o %cpu | awk \'{s+=$1} END {printf("%.2f",s/8);}\'';
 export const refreshFrequency = 10000;
-
 export const initialState = "Cpu: ...";
 
 export const updateState = event => {

@@ -1,17 +1,14 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
 export const command = "pmset -g batt | egrep -o '([0-9]+%).*' | cut -d% -f1";
 export const refreshFrequency = 60000;
-
 export const initialState = "Bat: ...";
 
 export const updateState = event => {
-  if (event.error) return event.error;
-
   const battery = parseInt(event.output);
   const batteryval = battery.toString().padStart(2, "0");
 
   if (battery > 6 && battery < 100) return `Bat: ${batteryval}%`;
-  else if (battery < 6) return `Bat: !!!`;
+  else if (battery < 6) return "Bat: !!!";
   else return "Bat: Fll";
 };
 

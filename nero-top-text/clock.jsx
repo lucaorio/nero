@@ -1,7 +1,6 @@
 // this widget is part of Nero -> https://github.com/lucaorio/nero
-export const command = 'date +"%d %b %Y - %H:%M"';
+export const command = "date +'%d %b - %H:%M'";
 export const refreshFrequency = 30000;
-
 export const initialState = "...";
 
 export const updateState = event => {

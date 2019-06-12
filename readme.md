@@ -14,21 +14,31 @@ Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to 
 - [Contacts](#contacts)
 
 ## Übersicht Widgets
+There are three different kind of menubars.
 
-![Nero Widgets](images/nero.widgets.jpg)
+The **top** one is usable by anyone and works on any regular macOS installation. It comes in two version: **graphical**, or **textual**.
+
+![https://github.com/lucaorio/nero/top-widgets.md](images/nero-top.jpg)
+![https://github.com/lucaorio/nero/top-text-widgets.md](images/nero-top-text.jpg)
+
+The **bottom** one has external dependencies, and it's useful just if you have a similar macOS setup.
+
+![https://github.com/lucaorio/nero/bottom-widgets.md](images/nero-bottom.jpg)
+
+Click any of the images above for an overview of the widgets available in a specific menubar.
 
 ### Rationale
 
 Nero is a **distraction-less** alternative to the standard macOS menubar. Main sources of inspirations are [Neauoire](https://xxiivv.com/)'s [widgets](https://github.com/neauoire/ubersicht-widgets), and some other Linux menubars I've seen here and there.
 
-This alternative menubar is **read-only** (not clickable) as I trigger volume controls, do no disturb, space switching, and chunkwm mode via shortcuts.
+This alternative menubars are **read-only** (not clickable) as I trigger everything via shortcuts.
 
 I'm not planning to add interactions, icons, nor animations to these widgets, but feel free to customize them as you see fit. :)
 
 ### Requirements
 
-- Overall collection: [Übersicht](http://tracesof.net/uebersicht), [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
-- _Chunkwm/Spaces_ widget: [chunkwm](https://github.com/koekeishiya/chunkwm)
+- [Übersicht](http://tracesof.net/uebersicht)
+- [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono)
 
 ### Installation
 
@@ -36,74 +46,21 @@ I'm not planning to add interactions, icons, nor animations to these widgets, bu
 
 ```shell
 $ git clone http://github.com/lucaorio/nero
-$ cp -r nero/nero.widgets ~/Library/Application\ Support/Übersicht/widgets/nero.widgets
+$ cp -r nero/nero-top ~/Library/Application\ Support/Übersicht/widgets/nero-top
 ```
+_Make sure to replace the 'nero-top' string with the desired version(s): nero-top, nero-top-text, and/or nero-bottom)_
 
 **Manual**:
 
-- Download the repository
-- Unzip `nero.widget.zip`
-- Move the `nero.widget` folder to your `Übersicht/widgets` directory
+- Download the [latest version](https://github.com/lucaorio/nero/releases/latest)
+- Unzip it
+- Move the desired `nero-top`, `nero-top-text`, and/or `nero-bottom` folder(s) to your `Übersicht/widgets` directory
 
-_Note: If Übersicht is consuming too much battery, consider changing the `refreshFrequency` value available in every widget (or just disable the not needed ones)._
-
-### Widgets
-
-**Chunkwm / macOS spaces**
-
-Provides current macOS _space_ ID and name, and _chunkwm_ layout mode.
-
-Examples: `[04-cod]: bsp` / `[01-term]: mon` / `[01-ukw]: flo`
-
-Amount of spaces, and their name can be customized in `chunkwm.sh`.
-
-**Do Not Disturb**
-
-Provides current status of macOS's _Do Not Disturb_ feature.
-
-Examples: `Dnd: ○` (off) / `Dnd: ●` (on)
-
-**Mute**
-
-Provides current status of macOS's _Mute_ feature.
-
-Examples: `Mut: ○` (off) / `Mut: ●` (on)
-
-**Clock**
-
-Provides current _date_, and _time_.
-
-Example: `29 Jan 2019 - 23:13`
-
-Tweak the shell script in `clock.jsx` to get an AM/PM format.
-
-**Download/Upload Speed**
-
-Provides current _download_, and _upload speeds_ every 5,000ms = 5s.
-
-Examples: `Dwl: 020 kb/s` / `Upl: 1.3 mb/s`
-
-**Memory**
-
-Provides current _memory pressure_, every 30,000ms = 30s.
-
-Examples: `Mem: 20%` / `Mem: !!!` (mem > 80%)
-
-**Cpu**
-
-Provides current _cpu load_, every 10,000ms = 10s.
-
-Examples: `Cpu: 20%` / `Cpu: !!!` (cpu > 80%)
-
-**Battery**
-
-Provides current _battery status_, every 60,000ms = 60s.
-
-Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
+_Note: If Übersicht is draining your battery, consider increasing the `refreshFrequency` value available in every widget (or just disable the ones not needed)._
 
 ## Alfred Theme
 
-![Nero Alfred](images/nero.alfred.jpg)
+![Nero Alfred](images/nero-alfred.jpg)
 
 ### Requirements
 
@@ -115,13 +72,14 @@ Examples: `Bat: 56%` / `Bat: !!!` (battery < 6%) / `Bat: Fll` (full battery)
 
 ```shell
 $ git clone http://github.com/lucaorio/nero
-$ open nero/nero.alfred/nero.alfredappearance
+$ open nero/nero-alfred/nero.alfredappearance
 ```
 
 **Manual**:
 
-- Download the repository
-- Open `nero.alfred` folder, and double-click `nero.alfredappearance`
+- Download the [latest version](https://github.com/lucaorio/nero/releases/latest)
+- Unzip it
+- Open the `nero-alfred` folder, and double-click `nero.alfredappearance`
 
 ## License
 
