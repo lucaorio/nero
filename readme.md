@@ -16,7 +16,7 @@ Nero is a collection of [Übersicht](http://tracesof.net/uebersicht) widgets to 
 ## Übersicht Widgets
 There are three different kind of menubars.
 
-The **top** one is usable by anyone and works on any regular macOS installation. It comes in two version: **graphical**, or **textual**.
+The **top** one is usable by anyone and works on any regular macOS installation. It comes in two versions: **graphical**, or **textual**.
 
 ![Nero - Top](images/nero-top.jpg)
 [View all widgets](https://github.com/lucaorio/nero/top-widgets.md)
