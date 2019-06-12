@@ -19,15 +19,15 @@ There are three different kind of menubars.
 The **top** one is usable by anyone and works on any regular macOS installation. It comes in two versions: **graphical**, or **textual**.
 
 ![Nero - Top](images/nero-top.jpg)
-[View all widgets](https://github.com/lucaorio/nero/top-widgets.md)
+[View all widgets](https://github.com/lucaorio/nero/blob/master/top-widgets.md)
 
 ![Nero - Top Text](images/nero-top-text.jpg)
-[View all widgets](https://github.com/lucaorio/nero/top-text-widgets.md)
+[View all widgets](https://github.com/lucaorio/nero/blob/master/top-text-widgets.md)
 
 The **bottom** one has external dependencies, and it's useful just if you have a similar macOS setup.
 
 ![Nero - Bottom](images/nero-bottom.jpg)
-[View all widgets](https://github.com/lucaorio/nero/bottom-widgets.md)
+[View all widgets](https://github.com/lucaorio/nero/blob/master/bottom-widgets.md)
 
 ### Rationale
 
