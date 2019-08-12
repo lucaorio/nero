@@ -2,13 +2,13 @@
 
 ![Nero - Bottom](images/nero-bottom.jpg)
 
-## Chunkwm / macOS spaces
+## Yabai / macOS spaces
 
-Provides current macOS _space_ ID and name, and [chunkwm](https://github.com/koekeishiya/chunkwm) layout mode.
+Provides current macOS _space_ ID and name, and [yabai](https://github.com/koekeishiya/yabai) layout mode.
 
-Examples: `[04-cod]: bsp` / `[01-term]: mon` / `[01-ukw]: flo`
+Examples: `[04-cod]: bsp` / `[01-term]: flt`
 
-Amount of spaces, and their name can be customized in `chunkwm.sh`.
+Amount of spaces, and their name can be customized in `yabai.jsx`.
 
 ## MPC Status
 
