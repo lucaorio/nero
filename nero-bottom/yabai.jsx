@@ -43,7 +43,7 @@ export const updateState = event => {
     const mode = getSpaceMode(space.type);
     const index = space.index;
     const name = getSpaceName(index);
-    return `[0${index}-${name}] ${mode}`;
+    return `[0${index}-${name}]: ${mode}`;
   }
   else return initialState;
 };
