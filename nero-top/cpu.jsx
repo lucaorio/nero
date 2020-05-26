@@ -8,11 +8,11 @@ export const updateState = event => {
   const cpuval = cpu.toString().padStart(2, "0");
   let color;
 
-  if (cpu <= 80) color = "#ffffff";
+  if (cpuval <= 80) color = "#ffffff";
   else color = "#d0021b";
 
   return {
-    val: cpuval,
+    val: cpuval <= 100 ? cpuval : 100,
     col: color
   };
 };
