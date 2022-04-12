@@ -5,7 +5,7 @@ export const initialState = "...";
 
 export const updateState = event => {
   // 0:0 to 23:59
-  const wakeup = {h: 8, m: 0};
+  const wakeup = {h: 7, m: 0};
   const bedtime = {h: 1, m: 0};
 
   // amount of minutes awake on custom timeframe
@@ -39,24 +39,27 @@ export const className = {
   right: "0px",
   boxSizing: "border-box",
   borderLeft: "1px solid #1c1c1c",
-  padding: "8px 12px 5px 12px",
-  fontFamily: "Roboto Mono",
-  fontWeight: "400",
-  fontSize: "10px",
-  lineHeight: "10px",
-  color: "#cccccc",
+  padding: "6px 12px 5px 12px",
+  fontFamily: '-apple-system',
+  fontWeight: '400',
+  fontSize: '12px',
+  lineHeight: '14px',
+  letterSpacing: '-0.35px',
+  color: 'rgba(255, 255, 255, 0.9)',
+
   "& .bar": {
     display: "inline-block",
     boxSizing: "border-box",
     marginLeft: "8px",
-    width: "106px",
-    height: "7px",
-    border: "1px solid #333333",
+    width: "120px",
+    height: "8px",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
     padding: "2px",
+
     "& .progress": {
       width: "100%",
       height: "1px",
-      backgroundColor: "white",
+      backgroundColor: "rgba(255, 255, 255, 0.9)",
     }
   }
 };
