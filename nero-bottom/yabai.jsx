@@ -22,7 +22,6 @@ export const updateState = (event, previousState) => {
   if (event.output && event.type === 'DATA_READY') {
     return (
       <div>
-        {/* {getSpaceMode(event.output.spaces)} */}
         {getSpaces(event.output.spaces)}
         {getWindow(event.output.windows)}
       </div>
@@ -51,7 +50,7 @@ const getSpaces = (spaces) => {
 }
 
 const getSingleScreenSpaces = (spaces) => {
-  const active = spaces.filter((space) => space.focused)[0]
+  const active = spaces.filter((space) => space['has-focus'])[0]
 
   return (
     <div className="displays">
@@ -61,7 +60,7 @@ const getSingleScreenSpaces = (spaces) => {
       {spaces.map((space) => (
         <div
           key={space.id}
-          className={space.focused ? 'space active' : 'space'}>
+          className={space['has-focus'] ? 'space active' : 'space'}>
           {space.index}
         </div>
       ))}
@@ -72,7 +71,7 @@ const getSingleScreenSpaces = (spaces) => {
 const getMultiScreenSpaces = (displays) => {
   return Object.keys(displays).map((displayKey) => {
     const spaces = displays[displayKey]
-    const active = spaces.filter((space) => space.focused)[0]
+    const active = spaces.filter((space) => space['has-focus'])[0]
 
     return (
       <div key={displayKey} className="displays">
@@ -82,7 +81,7 @@ const getMultiScreenSpaces = (displays) => {
         {spaces.map((space) => (
           <div
             key={space.id}
-            className={space.focused ? 'space active' : 'space'}>
+            className={space['has-focus'] ? 'space active' : 'space'}>
             {space.index}
           </div>
         ))}
@@ -92,13 +91,13 @@ const getMultiScreenSpaces = (displays) => {
 }
 
 const getSpaceMode = (spaces) => {
-  const active = spaces.filter((space) => space.focused)[0]
+  const active = spaces.filter((space) => space['has-focus'])[0]
   if (active) return active.type === 'float' ? 'flt ' : 'bsp'
   else return 'unk'
 }
 
 const getWindow = (windows) => {
-  const active = windows.filter((window) => window.focused)[0]
+  const active = windows.filter((window) => window['has-focus'])[0]
   const sticky = active ? active.sticky : 0
   const floating = active ? active.floating : 0
   const name = active ? active.app : 'no focus'
@@ -119,61 +118,66 @@ export const className = {
   bottom: '0px',
   left: '0px',
   boxSizing: 'border-box',
-  fontFamily: 'Roboto Mono',
-  fontWeight: '400',
-  fontSize: '10px',
-  lineHeight: '10px',
-  color: 'rgba(204, 204, 204, 1)',
+  width: "100%",
+  height: "26px",
+  borderTop: "1px solid rgba(255, 255, 255, 0.04)",
+  backgroundColor: "rgba(0, 0, 0, 0.1)",
+  fontFamily: '-apple-system',
+  fontWeight: '500',
+  fontSize: '12px',
+  lineHeight: '14px',
+  letterSpacing: '-0.35px',
+  color: 'rgba(255, 255, 255, 0.9)',
 
   '& .displays': {
     display: 'inline-block',
 
     '& > div:last-of-type': {
-      borderRight: '1px solid rgba(28, 28, 28, 1)',
+      borderRight: '1px solid rgba(255, 255, 255, 0.04)',
     },
   },
 
   '& .display': {
     display: 'inline-block',
-    padding: '8px 12px 5px 12px',
-    color: 'rgba(204, 204, 204, 0.3)',
-    borderRight: '1px solid rgba(28, 28, 28, 1)',
+    padding: '6px 12px 5px 12px',
+    color: 'rgba(255, 255, 255, 0.3)',
+    borderRight: '1px solid rgba(255, 255, 255, 0.04)',
 
     '&.active': {
-      color: 'rgba(204, 204, 204, 1)',
+      color: 'rgba(255, 255, 255, 0.9)',
     },
   },
 
   '& .space': {
     display: 'inline-block',
-    padding: '8px 12px 5px 12px',
-    color: 'rgba(204, 204, 204, 0.3)',
+    padding: '6px 12px 5px 12px',
+    color: 'rgba(255, 255, 255, 0.3)',
 
     '&.active': {
-      color: 'rgba(204, 204, 204, 1)',
+      color: 'rgba(255, 255, 255, 0.9)',
       backgroundColor: 'rgba(50, 50, 50, 1)',
     },
   },
 
   '& .window': {
     display: 'inline-block',
-    borderRight: '1px solid rgba(28, 28, 28, 1)',
+    borderRight: '1px solid rgba(255, 255, 255, 0.04)',
     padding: '0px 0px 0px 12px',
-    color: 'rgba(204, 204, 204, 0.3)',
+    color: 'rgba(255, 255, 255, 0.3)',
 
     '& .windowMode': {
       display: 'inline-block',
-      padding: '8px 0px 5px 0px',
+      padding: '6px 0px 5px 0px',
 
       '&.active': {
-        color: 'rgba(204, 204, 204, 1)',
+        color: 'rgba(255, 255, 255, 0.9)',
       },
     },
 
     '& .windowName': {
       display: 'inline-block',
-      padding: '8px 12px 5px 4px',
-      color: 'rgba(204, 204, 204, 1)',
+      padding: '6px 12px 5px 4px',
+      color: 'rgba(255, 255, 255, 0.9)',
       textTransform: 'lowercase',
     },
   },
