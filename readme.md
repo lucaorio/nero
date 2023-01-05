@@ -4,7 +4,7 @@
 
 Nero is a [Übersicht](http://tracesof.net/uebersicht) widget to monitor the state of [Yabai](https://github.com/koekeishiya/yabai/) tiling window manager.
 
-**Table of Contents**
+## Table of Contents
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -106,7 +106,7 @@ yabai -m config bottom_padding 54
 The first version of Nero was meant to replace macOS menubar and add a few additional indicators. It also included a widget for Yabai and a theme for [Alfred](https://alfredapp.com/).
 
 With this version, I'm taking an entirely different approach and focus on Yabai, which seems to be the main reason why people discovered this repo in the first place:
-- The Alfred theme has been moved to [nero-alfred](https://github.com/lucaorio/nero-alfred). The repository is available for whoever needs it, but it won't be updated anymore (as a note, I am currently using [Raycast](https://raycast.com/).)
+- The Alfred theme has been moved to [alfred-theme-nero](https://github.com/lucaorio/alfred-theme-nero). The repository is available for whoever needs it, but it won't be updated anymore (as a note, I am currently using [Raycast](https://raycast.com/).)
 - The indicators for macOS have been removed because quick, periodic refreshing of Übersicht widgets was a real drag on the battery.
 
 
