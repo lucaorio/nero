@@ -23,8 +23,8 @@ Nero is a [Übersicht](http://tracesof.net/uebersicht) widget to monitor the sta
 
 **CLI**
 ```shell
-git clone http://github.com/lucaorio/nero
-ln -s nero ~/Library/Application\ Support/Übersicht/widgets/nero
+git clone http://github.com/lucaorio/nero && cd nero
+cp -r nero ~/Library/Application\ Support/Übersicht/widgets
 ```
 
 **Manual**
@@ -52,7 +52,7 @@ As an example, the `refresh-uebersicht.sh` file below contains a simple osascrip
 osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh widget id \"nero-yabai-jsx\""
 ```
 
-The shell file is run from within Yabai own config `yabairc` file, by listening to various signals...
+The shell file is run from within Yabai own config `yabairc` file, by listening to specific signals...
 ```shell
 yabai -m signal --add event=space_changed action="refresh-uebersicht.sh"
 yabai -m signal --add event=window_focused action="refresh-uebersicht.sh"
@@ -60,14 +60,15 @@ yabai -m signal --add event=application_activated action="refresh-uebersicht.sh"
 ```
 
 ...and also whenever one of the commands below are triggered via Karabiner, or skhd, etc.
-- `yabai -m space --create && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m space --layout float && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m space --layout bsp && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m space --move prev && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m space --move next && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m window --toggle float && ~/.config/yabai/refresh-uebersicht.sh`
-- `yabai -m window --toggle sticky && ~/.config/yabai/refresh-uebersicht.sh`
-
+```shell
+yabai -m space --create && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m space --layout float && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m space --layout bsp && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m space --move prev && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m space --move next && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m window --toggle float && ~/.config/yabai/refresh-uebersicht.sh
+yabai -m window --toggle sticky && ~/.config/yabai/refresh-uebersicht.sh
+```
 
 ## Customization
 
