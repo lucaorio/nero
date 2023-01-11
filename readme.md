@@ -46,29 +46,7 @@ As of now, Nero provides multi-monitor indicators for:
 
 The widgets do not refresh periodically to preserve battery life and stay as reactive as possible. The re-rendering should be triggered by relying on [Yabai's own signals](https://github.com/koekeishiya/yabai/wiki/Commands#automation-with-rules-and-signals) and the activation method / hotkey utility of choice.
 
-**Example**:
-As an example, the `refresh-uebersicht.sh` file below contains a simple osascript to refresh the widgets:
-```shell
-osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh widget id \"nero-yabai-jsx\""
-```
-
-The shell file is run from within Yabai own config `yabairc` file, by listening to specific signals...
-```shell
-yabai -m signal --add event=space_changed action="refresh-uebersicht.sh"
-yabai -m signal --add event=window_focused action="refresh-uebersicht.sh"
-yabai -m signal --add event=application_activated action="refresh-uebersicht.sh"
-```
-
-...and also whenever one of the commands below are triggered via Karabiner, or skhd, etc.
-```shell
-yabai -m space --create && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m space --layout float && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m space --layout bsp && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m space --move prev && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m space --move next && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m window --toggle float && ~/.config/yabai/refresh-uebersicht.sh
-yabai -m window --toggle sticky && ~/.config/yabai/refresh-uebersicht.sh
-```
+> **If you need some examples, take a look at [Intentio](https://github.com/lucaorio/intentio), another project I released. Intentio is a collection of config files for a shortcut system based on Karabiner (via Goku), Yabai, and Übersicht (via Nero.)**
 
 ## Customization
 
