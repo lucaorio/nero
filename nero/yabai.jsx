@@ -46,8 +46,8 @@ export const initialState = 'Loading Yabai...'
 
 export const command = (dispatch) => {
   run('defaults read -g AppleInterfaceStyle 2>/dev/null').then((themeData) => {
-    run('/usr/local/bin/yabai -m query --spaces').then((spacesData) => {
-      run('/usr/local/bin/yabai -m query --windows').then((windowData) => {
+    run('/opt/homebrew/bin/yabai -m query --spaces').then((spacesData) => {
+      run('/opt/homebrew/bin/yabai -m query --windows').then((windowData) => {
         const spaces = JSON.parse(spacesData)
         const windows = JSON.parse(windowData || {})
         const theme = themeData ? 'dark' : 'light'
